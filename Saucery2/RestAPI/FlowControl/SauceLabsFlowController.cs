@@ -21,7 +21,7 @@ namespace Saucery2.RestAPI.FlowControl {
 
             var jsonEndIndex = json.Length - 3;
             var remainingSection = ExtractJsonSegment(json, jsonStartIndex, jsonEndIndex);
-            var flowControl = SimpleJson.DeserializeObject<FlowControl>(remainingSection);
+            var flowControl = SimpleJson.SimpleJson.DeserializeObject<FlowControl>(remainingSection);
             return flowControl.remaining.overall <= 0;
         }
     }

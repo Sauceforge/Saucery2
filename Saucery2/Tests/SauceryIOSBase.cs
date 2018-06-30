@@ -13,7 +13,7 @@ namespace Saucery2.Tests {
         public override void InitialiseDriver(DesiredCapabilities caps, int waitSecs) {
             try {
                 Driver = new SauceryIOSDriver(caps);
-                Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(waitSecs));
+                Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(waitSecs);
             } catch(Exception ex) {
                 Console.WriteLine(ex.Message);
             }

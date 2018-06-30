@@ -14,7 +14,7 @@ namespace Saucery2.Tests {
             SauceLabsFlowController.ControlFlow();
             try {
                 Driver = new SauceryRemoteWebDriver(new Uri(SauceryConstants.SAUCELABS_HUB), caps);
-                Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(waitSecs));
+                Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(waitSecs);
             } catch(Exception ex) {
                 Console.WriteLine(ex.Message);
             }

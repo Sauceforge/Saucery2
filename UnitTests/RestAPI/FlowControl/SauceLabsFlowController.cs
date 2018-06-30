@@ -15,7 +15,7 @@ namespace UnitTests.RestAPI.FlowControl {
             //int maxParallelMacSessionsAllowed;  //Possible future use.
             var json = GetJsonResponseForUser(SauceryConstants.ACCOUNT_CONCURRENCY_REQUEST);
             var remainingSection = ExtractJsonSegment(json, json.IndexOf("\"remaining", StringComparison.Ordinal), json.Length - 3);
-            var flowControl = SimpleJson.DeserializeObject<FlowControl>(remainingSection);
+            var flowControl = SimpleJson.SimpleJson.DeserializeObject<FlowControl>(remainingSection);
             return flowControl.remaining.overall <= 0;
         }
     }
