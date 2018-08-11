@@ -1,9 +1,9 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Saucery2</id>
-    <version>2.6.7</version>
+    <version>2.7.0</version>
     <title>Saucery 2</title>
-    <authors>Full Circle Solutions</authors>
+    <authors>Sauceforge</authors>
     <owners>Andrew Gray</owners>
     <description>Sourcery for SauceLabs - Unlocking SauceLabs capability.</description>
     <releaseNotes>
@@ -35,6 +35,8 @@
        - Upgrade to NUnit 2.6.6.
       v2.6.7:
        - Upgrade to NUnit 2.6.7.
+      v2.7:
+       - Upgrade to NUnit 2.7.
     </releaseNotes>
     <summary>Sourcery for SauceLabs - Unlocking SauceLabs capability</summary>
     <projectUrl>https://github.com/Sauceforge/Saucery2</projectUrl>
@@ -48,7 +50,7 @@
     <dependencies>
       <dependency id="Newtonsoft.Json" version="11.0.2" />
       <dependency id="RestSharp" version="106.3.1" />
-      <dependency id="NUnit" version="2.6.7" />
+      <dependency id="NUnit" version="2.7" />
       <dependency id="Selenium.WebDriver" version="3.13.1" />
       <dependency id="Selenium.Support" version="3.13.1" />
       <dependency id="Appium.WebDriver" version="3.0.0.2" />
